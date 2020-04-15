@@ -1,5 +1,5 @@
 <script type="text/javascript">
-    RED.nodes.registerType('soapserverResponse',{
+    RED.nodes.registerType('soapresponse',{
       // node definition
       category: "output",
       inputs: 1,
@@ -17,7 +17,7 @@
     });
   </script>
   
-  <script type="text/x-red" data-help-name="soapserverResponse">
+  <script type="text/x-red" data-help-name="soapresponse">
      <p>Respond to a previous SOAP request.</p>
      <p>This node is only ever used in conjunction with a previous soap soapserver
      node used as the start of a flow.  It builds and sends back response to
@@ -26,7 +26,7 @@
      the response body and should be a string.</p>
   </script>
   
-  <script type="text/x-red" data-template-name="soapserverResponse">
+  <script type="text/x-red" data-template-name="soapresponse">
       <div class="form-row">
           <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
           <input type="text" id="node-input-name" placeholder="Name">

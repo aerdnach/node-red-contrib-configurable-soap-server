@@ -299,6 +299,6 @@ module.exports = function(RED) {
             this.error(err);
         }
     }
-    RED.nodes.registerType("soapServer",SoapServerNode);
-    RED.library.register("soapServer");
+    RED.nodes.registerType("soapserver",SoapServerNode);
+    RED.library.register("soapserver");
 };

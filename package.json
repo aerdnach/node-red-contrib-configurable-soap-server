@@ -22,7 +22,7 @@
   "node-red": {
     "nodes": {
       "soapserver": "soapServer.js",
-      "soapserverResponse": "soapserverResponse.js"
+      "soapserverResponse": "soapResponse.js"
     }
   },
   "keywords": [

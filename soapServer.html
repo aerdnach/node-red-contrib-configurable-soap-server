@@ -1,4 +1,4 @@
-<script type="text/x-red" data-template-name="soapServer">
+<script type="text/x-red" data-template-name="soapserver">
     <div class="form-row">
         <label for="node-input-name"><i class="fa fa-tag"></i> <span data-i18n="common.label.name"></span>Name</label>
         <div style="display: inline-block; width: calc(100% - 105px)"><input type="text" id="node-input-name" data-i18n="[placeholder]common.label.name"></div>
@@ -9,7 +9,7 @@
     </div>
     <div class="form-row">
       <label for="node-input-wsdl"><i class="icon-tasks"></i> Wsdl</label>
-      <input type="text" id="node-input-wsdl" placeholder="Wsdl">
+      <textarea id="node-input-wsdl" placeholder="Wsdl"></textarea>
     </div>
     <div class="form-row" style="margin-bottom: 0px;">
         <label for="node-input-func"><i class="fa fa-wrench"></i> <span data-i18n="function.label.function"></span></label>
@@ -18,7 +18,7 @@
     </div>
     <div class="form-row node-text-editor-row" style="position:relative">
         <div style="position: absolute; right:0; bottom:calc(100% + 3px);"><button id="node-function-expand-js" class="red-ui-button red-ui-button-small"><i class="fa fa-expand"></i></button></div>
-        <div style="height: 250px; min-height:150px;" class="node-text-editor" id="node-input-func-editor" ></div>
+        <div style="height: 250px; min-height:150px;" class="node-text-editor" id="node-input-func-editor" >Soap Server Code</div>
     </div>
     <div class="form-row" style="margin-bottom: 0px">
         <label for="node-input-outputs"><i class="fa fa-random"></i> <span data-i18n="function.label.outputs"></span></label>
@@ -27,7 +27,7 @@
 </script>
 
 <script type="text/javascript">
-    RED.nodes.registerType('function',{
+    RED.nodes.registerType('soapserver',{
         category: "input",
         defaults: {
             name: {value:""},

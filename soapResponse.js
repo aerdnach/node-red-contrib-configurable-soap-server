@@ -1,5 +1,5 @@
 module.exports = function(RED) {
-    function SoapServerResponseNode(config) {
+    function SoapResponseNode(config) {
       var thisNode = this;
       
       RED.nodes.createNode(thisNode, config);
@@ -16,7 +16,7 @@ module.exports = function(RED) {
         callback({payload});
       });
     }
-    RED.nodes.registerType("soapserverResponse", SoapServerResponseNode);
+    RED.nodes.registerType("soapresponse", SoapResponseNode);
   }
   // End of file
   
