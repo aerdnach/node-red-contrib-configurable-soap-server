@@ -18,5 +18,16 @@
   "homepage": "https://github.com/aerdnach/node-red-contrib-configurable-soap-server#readme",
   "dependencies": {
     "soap": "^0.31.0"
-  }
+  },
+  "node-red": {
+    "nodes": {
+      "soapserver": "soapServer.js",
+      "soapserverResponse": "soapserverResponse.js"
+    }
+  },
+  "keywords": [
+    "node-red",
+    "soap",
+    "wsdl"
+  ]
 }
