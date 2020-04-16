@@ -8,8 +8,8 @@ Clone this repo, then from node-red directory run *npm i path_where_you_clone_re
 
 ```yaml
 functionGlobalContext: {
-	soap: require('soap'),
-	http: require('http'),
+  soap: require('soap'),
+  http: require('http'),
 }
 ```
 Import *example_flow.json* to see in action a basic soap server. 
