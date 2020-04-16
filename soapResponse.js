@@ -17,6 +17,4 @@ module.exports = function(RED) {
       });
     }
     RED.nodes.registerType("soapresponse", SoapResponseNode);
-  }
-  // End of file
-  
+}  
