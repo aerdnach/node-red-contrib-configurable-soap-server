@@ -1,3 +1,23 @@
+<script type="text/x-red" data-help-name="soapserver">
+    <p>Listen for an incoming SOAP request. An Inject node is needed to start the SOAP Server.</p>
+    <p>
+        The Port field must containt the port that will be used in server declaration (must be different from Node-Red port), 
+        the Wsdl field must contain the wsdl declaration (this will be available at <code>http://nodeRED-Host:port/soap?wsdl</code>).</p>
+    <p>
+        The Soap Server Code section must contain the code for the servicese declared in WSDL.<br/><br/>
+        A <code>node.send()</code> is required to manage response in the response node.<br/><br/>
+        <code>
+            node.send({
+                "payload": payload,
+                "_soapServer_soapResponseCallback": soapResponseCallback
+            });
+        </code><br/><br/>
+        See <a target="_blank" href="https://www.npmjs.com/package/soap"> npm soap module guide</a> for details about server declaration.
+        See <a target="_blank" href="https://github.com/aerdnach/node-red-contrib-configurable-soap-server"> here</a> for a complete example flow.
+    </p>
+    <p>The endpoint URL for a SOAP/HTTP client is <code>http://nodeRED-Host:port/soap</code></p>
+ </script>
+
 <script type="text/x-red" data-template-name="soapserver">
     <div class="form-row">
         <label for="node-input-name"><i class="fa fa-tag"></i> <span data-i18n="common.label.name"></span>Name</label>

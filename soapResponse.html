@@ -1,3 +1,19 @@
+<script type="text/x-red" data-help-name="soapresponse">
+  <p>Respond to a previous SOAP request.</p>
+  <p>This node is only ever used in conjunction with a previous soap soapserver
+  node used as the start of a flow. It builds and sends back response to
+  a waiting SOAP client that made a previous call to start the flow in the
+  first place. The content of the <code>msg.payload</code> structure is sent back in
+  the response body and should be a string.</p>
+</script>
+
+<script type="text/x-red" data-template-name="soapresponse">
+   <div class="form-row">
+       <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+       <input type="text" id="node-input-name" placeholder="Name">
+   </div>
+</script>  
+
 <script type="text/javascript">
     RED.nodes.registerType('soapresponse',{
       // node definition
@@ -16,19 +32,3 @@
       }
     });
   </script>
-  
-  <script type="text/x-red" data-help-name="soapresponse">
-     <p>Respond to a previous SOAP request.</p>
-     <p>This node is only ever used in conjunction with a previous soap soapserver
-     node used as the start of a flow.  It builds and sends back response to
-     a waiting SOAP client that made a previous call to start the flow in the
-     first place.  The content of the <code>msg.payload</code> structure is sent back in
-     the response body and should be a string.</p>
-  </script>
-  
-  <script type="text/x-red" data-template-name="soapresponse">
-      <div class="form-row">
-          <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
-          <input type="text" id="node-input-name" placeholder="Name">
-      </div>
-  </script>  

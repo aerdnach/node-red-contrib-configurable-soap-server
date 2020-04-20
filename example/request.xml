@@ -1,0 +1,8 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:nod="http://www.neilkolban.com/NodeRED/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <nod:NodeREDPayload>
+         <payload>Sample Request</payload>
+      </nod:NodeREDPayload>
+   </soapenv:Body>
+</soapenv:Envelope>
