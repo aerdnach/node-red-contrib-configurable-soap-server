@@ -1,7 +1,7 @@
 <script type="text/x-red" data-help-name="soapresponse">
-  <p>Respond to a previous SOAP request.</p>
-  <p>This node is only ever used in conjunction with a previous soap soapserver
-  node used as the start of a flow. It builds and sends back response to
+  <p>This node respond to a previous SOAP request.</p>
+  <p>This node is works only if used in conjunction with a previous soap soapserver
+  node that starts a flow. It builds and sends back response to
   a waiting SOAP client that made a previous call to start the flow in the
   first place. The content of the <code>msg.payload</code> structure is sent back in
   the response body and should be a string.</p>

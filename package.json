@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Custom nodes for Node-Red to use SOAP Server",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aerdnach/node-red-contrib-configurable-soap-server.git"
