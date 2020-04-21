@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-configurable-soap-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Custom nodes for Node-Red to use SOAP Server",
   "main": "index.js",
   "repository": {
