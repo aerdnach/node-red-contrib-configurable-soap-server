@@ -1,9 +1,10 @@
 module.exports = function(RED) {
     function SoapResponseNode(config) {
       var thisNode = this;
-      
       RED.nodes.createNode(thisNode, config);
-
+      
+      var responseWrapper = config.wrapper !== "" ? config.wrapper : "payload";
+      
       thisNode.on("input", function(msg) {
         var callback = msg["_soapServer_soapResponseCallback"];
         
@@ -13,7 +14,7 @@ module.exports = function(RED) {
         }
 
         var payload = msg.payload;
-        callback({payload});
+        callback({[responseWrapper]: payload});
       });
     }
     RED.nodes.registerType("soapresponse", SoapResponseNode);
