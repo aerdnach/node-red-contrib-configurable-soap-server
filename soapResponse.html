@@ -1,12 +1,12 @@
 <script type="text/x-red" data-help-name="soapresponse">
   <p>This node respond to a previous SOAP request.</p>
-  <p>This node is works only if used in conjunction with a previous soap soapserver
+  <p>This node works only if used in conjunction with a previous soap soapserver
   node that starts a flow. It builds and sends back response to
   a waiting SOAP client that made a previous call to start the flow in the
   first place. The content of the <code>msg.payload</code> structure is sent back in
-  the response body and should be a string. If Response Wrapper is set, response will be 
-  wrapped in a tag that correspond to set string; if no value is defined it will be set 
-  by default to payload</p>
+  the response body and should be a string. If <code>Response Wrapper</code> is set, data returned 
+  with response will be wrapped in a tag that correspond to the defined value; if no value is 
+  defined it will be set by default to payload.</p>
 </script>
 
 <script type="text/x-red" data-template-name="soapresponse">
